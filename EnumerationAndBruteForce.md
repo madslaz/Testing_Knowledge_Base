@@ -26,3 +26,5 @@
 |Cookie attributes can be used to enhance browser's protection of cookie|Tokens do not have automatic security protections enforced and should, therefore, be safeguarded against disclosures|
 |Cookies can be vulnerable to conventional client-side attacks such as CSRF, where the browser is tricked into making a request on behalf of the user|As token is  not automatically added to any request and cannot be read from LocalStorage by other domains, conventional client-side attacks, such as CSRF, are blocked|
 |As cookies are locked to a specific domain, it can be difficult to use them securely in decentralized web applications|Tokens work well in decentralized web applications, as they are managed through JS and can often contain all the information to verify the token itself|
+
+- Insecure Session Transmission example: Insecure redirect where threat actor controls the URL where you redirect to post-authentication. Happened with Oracle's [SSO solution](https://krbtgt.pw/oracle-oam-10g-session-hijacking/)
