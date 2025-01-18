@@ -6,3 +6,4 @@
     - Straightforward but not secure over non-HTTPS connection.  
 
 `hydra -l admin -P /usr/share/wordlists/SecLists/Passwords/Common-Credentials/500-worst-passwords.txt -f 10.10.192.40  http-get /labs/basic_auth` - https://www.kali.org/tools/hydra/
+- `waybackurls` to dump all links saved in Wayback Machine. 
