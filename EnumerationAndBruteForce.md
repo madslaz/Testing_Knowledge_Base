@@ -14,5 +14,15 @@
   - **HTTPOnly**: Indicates to browser that the cookie value may not be read by client-side JavaScript.
   - **Expire**: Indicates to the browser when a cookie value will no longer be valid and should be removed.
   - **SameSite**: Indicates to the browser whether the cookie may be transmitted in cross-site requests to help protect against CSRF attacks.
-    - SameSite="Lax" allows the cookies to be sent on some cross-site requests, while "Strict" never allows cookies to be sent on a cross-site request. 
+    - SameSite="Lax" allows the cookies to be sent on some cross-site requests, while "Strict" never allows cookies to be sent on a cross-site request.
+- Token-based session management is a relatively new concept. Instead of using browser's automatic cookie management featuries, it relies on client-side code for the process.
+  - After authentication, the web application provides a token within the request body. Using client-side JavaScript code, this token is then stored in the browser's LocalStorage.
+  - When a new request is made, JavaScript code must load the token from storage and attach it as a header.
+  - More common types of tokens is JSON Web Tokens (JWT), which is passed through the `Authorization: Bearer` header. 
 
+|Cookie-Session Management|Token-Based Session Management|
+|-----------|-----------|
+|Cookie is auto sent by browser with each request|Token has to be submitted as a header with each request using client-side JS|
+|Cookie attributes can be used to enhance browser's protection of cookie|Tokens do not have automatic security protections enforced and should, therefore, be safeguarded against disclosures|
+|Cookies can be vulnerable to conventional client-side attacks such as CSRF, where the browser is tricked into making a request on behalf of the user|As token is  not automatically added to any request and cannot be read from LocalStorage by other domains, conventional client-side attacks, such as CSRF, are blocked|
+|As cookies are locked to a specific domain, it can be difficult to use them securely in decentralized web applications|Tokens work well in decentralized web applications, as they are managed through JS and can often contain all the information to verify the token itself|
