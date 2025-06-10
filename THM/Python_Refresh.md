@@ -18,8 +18,8 @@
     | List | Series of different data types in a collection 
 ### Miscellaneous
   - Comments start with # symbol. Full comment block, use """
-
-
+  - Counts from 0
+    
 ## Mathematical Operators
 | Operator | Syntax | Example| 
 | --- | --- | ---- | 
@@ -85,3 +85,17 @@ elif customer_basket_cost < 100:
   total_cost=total_cost+customer_basket_cost
   print(total_cost)
 ```
+## For and While Loops
+- For and while loops allow for iteration of the program.
+- While: Run loop indefinitely or based on a condition.
+- For: Iterate over a sequence, such as a list.
+```
+i = 1
+while i <= 10:
+  print(i)
+  i = i + 1
+```
+```
+websites = ["facebook.com", "twitter.com", "google.com"]
+for site in websites:
+  print(site)
