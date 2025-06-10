@@ -99,3 +99,5 @@ while i <= 10:
 websites = ["facebook.com", "twitter.com", "google.com"]
 for site in websites:
   print(site)
+```
+- Can leverage range for for loops, such as `for i in range (101)`
