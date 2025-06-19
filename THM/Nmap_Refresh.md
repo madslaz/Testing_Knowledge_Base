@@ -11,6 +11,8 @@
 | -sW | Windows scan is like an ACK scan; however, it CAN detect open versus closed ports on certain machines |
 | -Pn | Skip the ping test and simply scan every target host provided. |
 | -sV | Attempted version detection of service on port. |
+| -p- | Scan all ports (all 65535) |
+| --top-ports | Follow by number of ports to scan top ports, so --top-ports 10 to scan top 10 ports |
 
 ### Simple Mail Transfer Protocol (SMTP): Used for sending and receiving email, typically associated with mail server. 
 `nmap -sV -sC -Pn -p25 -iL <target_list> --script=smtp-commands,smtp-enum-users,smtp-vuln-cve-2010-4344,smtp-vuln-cve-2011-1720,smtp-vuln-cve2011-1764`
