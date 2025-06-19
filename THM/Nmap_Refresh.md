@@ -9,7 +9,8 @@
 | -sF, -sX, -sN | TCP FIN, NULL, and Xmas scans: Special purpose scan types adept at sneaking past firewalls to explores ystems behind them. Rely on target behavior some systems don't exhibit. |
 | -sA | TCP ACK scan used to map out firewall rulesets. In particular, helps understand whether firewalls rules are stateful or not. Cannot distinguish open from closed ports. |
 | -sW | Windows scan is like an ACK scan; however, it CAN detect open versus closed ports on certain machines |
-| -Pn | Skip the ping test and simply scan every target host provided. 
+| -Pn | Skip the ping test and simply scan every target host provided. |
+| -sV | Attempted version detection of service on port. |
 
 ### Simple Mail Transfer Protocol (SMTP): Used for sending and receiving email, typically associated with mail server. 
 `nmap -sV -sC -Pn -p25 -iL <target_list> --script=smtp-commands,smtp-enum-users,smtp-vuln-cve-2010-4344,smtp-vuln-cve-2011-1720,smtp-vuln-cve2011-1764`
