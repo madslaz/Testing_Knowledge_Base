@@ -17,3 +17,4 @@
 
 ### Resources
 * [Port Scanning](https://nmap.org/book/port-scanning.html)
+* [Visual Cheatsheet](https://cdn.comparitech.com/wp-content/uploads/2019/06/Nmap-Cheat-Sheet.pdf)
