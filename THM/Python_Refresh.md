@@ -6,7 +6,8 @@
     ```
     name = "Maddie"
     print (f"My name is {name}.")
-  - To print a string, we have to leverage "". For printing a variable, reference the variable directly: `print(variable)`. 
+  - To print a string, we have to leverage "". For printing a variable, reference the variable directly: `print(variable)`.
+  - pip is Python's package manager
 ### Variables and Data Types
   - Variables allow you to store and update data. You have a variable name and a store data to that name.
     | Data Type| Description|
@@ -19,7 +20,6 @@
 ### Miscellaneous
   - Comments start with # symbol. Full comment block, use """
   - Counts from 0
-    
 ## Mathematical Operators
 | Operator | Syntax | Example| 
 | --- | --- | ---- | 
@@ -29,7 +29,6 @@
 | Division | / | 10/2=5 |
 | Modulus | % | 10%2=0 |
 | Exponent | ** | 5**2=25 |
-
 ## Comparison Operators 
 | Operator | Syntax | 
 | --- | --- | 
@@ -39,12 +38,10 @@
 | Not Equal To | != | 
 | Greater Than or Equal | >= | 
 | Less Than or Equal | <= |
-
 ## Boolean Operators
 - **AND** if x>= 5 AND x<=100, return TRUE if x is a number between 5 and 100
 - **OR** if x ==1 or x==10 returns TRUE if x is 1 or 10
 - **NOT** if NOT y returns TRUE if y value is FALSE
-
 ```
 a = 1
 if a == 1 or a > 10:
@@ -61,7 +58,6 @@ elif name == "bob" and not hungry:
 else:
   print("Not sure who this is or if they are hungry")
 ```
-
 ## If Statements
 - Allow programs to make decisions based on a condition.
 ```
@@ -72,10 +68,8 @@ else:
     - If a customer spends < $100, the shipping cost is $1.20 per kg of the baskets weight
     Print the customers total basket cost (including shipping) to complete this exercise.
 """
-
 customer_basket_cost = 34
 customer_basket_weight = 44
-
 # Write if statement here to calculate the total cost
 if customer_basket_cost > 100:
   total_cost=customer_basket_cost
@@ -101,7 +95,6 @@ for site in websites:
   print(site)
 ```
 - Can leverage range for for loops, such as `for i in range (101)`
-
 ## Function
 - Functions are blocks of code that can be called at different places within the program.
 ```
@@ -124,7 +117,6 @@ spent = 10
 spent = spent + calcCost("sweets")
 print("You have spent:" + str(spent))
 ``` 
-
 ```
 def bitcoinToUSD(bitcoin_amount, bitcoin_value_usd):
   bitcoinInUSD = bitcoin_amount * bitcoin_value_usd
@@ -135,7 +127,6 @@ def bitcoinToUSD(bitcoin_amount, bitcoin_value_usd):
 x = bitcoinToUSD(investment_in_bitcoin, bitcoin_to_usd)
 print(x)
 ```
-
 ## Reading and Writing from Files
 ```
 f = open("file_name", "r")
@@ -149,7 +140,6 @@ with open('example.txt', 'r') as file:
   for line in lines:
     print(line.strip()) # strip() removes whitespace/newlines
 ```
-
 ```
 f = open("demo.txt", "a") # A for append to existing file
 f.write("new text!")
@@ -175,5 +165,11 @@ with open('students.txt', 'r') as file:
 - range(start, end, step)
 - The end is not included, so an end of -1 goes up to -1 but does not include it - stops at 0
 - If list has 4 items: 1 2 3 4, process as 0 1 2 3, so starting at the end would require len(list) - 1
-
-
+## Import Libraries
+- Import libraries which are a collection of files that contain functions.
+```
+import datetime
+current_time = datetime.datetime.now()
+print(current_time)
+```
+- Call libraries like this: library_name.method_name()
