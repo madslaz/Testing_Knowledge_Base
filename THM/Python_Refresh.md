@@ -129,9 +129,51 @@ print("You have spent:" + str(spent))
 def bitcoinToUSD(bitcoin_amount, bitcoin_value_usd):
   bitcoinInUSD = bitcoin_amount * bitcoin_value_usd
   if bitcoinInUSD < 30000:
-    print("Broke b*tch")
+    print("Broke!")
   return bitcoinInUSD
 
 x = bitcoinToUSD(investment_in_bitcoin, bitcoin_to_usd)
 print(x)
 ```
+
+## Reading and Writing from Files
+```
+f = open("file_name", "r")
+print (f.read())
+```
+- To open a file, we use the built-in open() function and the "r" parameter standa for read.
+- The file variable has a read() method for reading the contents of the file. You can also use the readlines() method to loop over each line in the file; useful if you have a list where each item is on a new line.
+```
+with open('example.txt', 'r') as file:
+  lines = file.readlines()
+  for line in lines:
+    print(line.strip()) # strip() removes whitespace/newlines
+```
+
+```
+f = open("demo.txt", "a") # A for append to existing file
+f.write("new text!")
+f.close() # Close so no more writing can occur
+f = open ("demo2.txt, "w") #Create and write
+f.write("New file text!")
+f.close()
+```
+- Readlines could be helpful for index-based processing, so for example:
+```
+with open('students.txt', 'r') as file:
+  students = file.readlines()
+  print(f"First student: {students[0].strip()}")
+  print(f"Last student: {students[-1].strip()}")
+  for i in range (len(students)-1):
+    print(f"Pair: {students[i].strip()} and {students[i+1].strip()}") # Compare adjacent students
+  for i in range(0, len(students), 3):
+    print(f"Student #{i}: {students[i].strip()}") # Print every 3rd student
+  for i in range (len(students) - 1, -1, -1):
+    print(f"Reverse order:{students[i].strip()}")
+```
+## Indices Reminder
+- range(start, end, step)
+- The end is not included, so an end of -1 goes up to -1 but does not include it - stops at 0
+- If list has 4 items: 1 2 3 4, process as 0 1 2 3, so starting at the end would require len(list) - 1
+
+
