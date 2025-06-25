@@ -101,3 +101,37 @@ for site in websites:
   print(site)
 ```
 - Can leverage range for for loops, such as `for i in range (101)`
+
+## Function
+- Functions are blocks of code that can be called at different places within the program.
+```
+def sayHello(name):
+  print("Hello " + name + "! Nice to meet you.")
+
+sayHello("ben")
+```
+  - def indicates the beginning of a function. Keyword is followed by a name that the programmer defines.
+```
+def calcCost(item):
+  if(item == "sweets"):
+    return 3.99 # Decimal is a float
+  elif (item == "oranges"):
+    return 1.99
+  else:
+    return 0.99
+
+spent = 10
+spent = spent + calcCost("sweets")
+print("You have spent:" + str(spent))
+``` 
+
+```
+def bitcoinToUSD(bitcoin_amount, bitcoin_value_usd):
+  bitcoinInUSD = bitcoin_amount * bitcoin_value_usd
+  if bitcoinInUSD < 30000:
+    print("Broke b*tch")
+  return bitcoinInUSD
+
+x = bitcoinToUSD(investment_in_bitcoin, bitcoin_to_usd)
+print(x)
+```
