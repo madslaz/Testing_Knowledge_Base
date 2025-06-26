@@ -39,7 +39,7 @@
 | > | Greater than 30 > 5 |
 | >= | Greater than or equal, 1,000>= | 
 
-####
+#### Data Types
 | Data Types | Example |
 | --- | --- |
 | String | 'Morpheus' |
@@ -48,3 +48,48 @@
 | Booleans | True or false |
 | Numbers | 455 |
 | Floating-point numbers | 10.5 |
+
+## Conditionals 
+```
+if (5 === 5) {
+console.log('Hello world!'); // Prints to console
+};
+```
+
+```
+if (5 === 10) {
+console.log('Hello world!'); // Skips this
+} else if (10 === 10) {
+console.log('Hello World!'); // Prints hello world to the console!
+};
+```
+
+```
+if (5 === 10) {
+console.log('Hello World!'); // Skips this code
+} else if (10 === 10) {
+console.log('Hello world!);
+} else {
+console.log('ERROR');
+};
+```
+
+## Switch Cases
+```
+const animal = 3;
+switch (animal) {
+case 1:
+document.write('Cow');
+break; \\ Ending specific case/switch block
+case 2:
+document.write('Chicken');
+break;
+case 3:
+document.write('Monkey');
+break;
+default: \\ In case our variable is equal to something not present in our switch
+dcoument.write('Animal?'); }
+```
+
+## Functions
+- 
