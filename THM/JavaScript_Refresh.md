@@ -14,3 +14,37 @@
       const variableThree = 'Creator of Linux Kernel';
       ```
     - Variables can store numbers, strings, and booleans. There are also other data types, such as arrays and objects. 
+
+## JavaScript Cheatsheet
+#### Arithmetic Operators
+| Operator | Type | Use Case & Example |
+| --- | --- | --- |
+| + | Addition | Addition, add numbers or strings together. 25 + 5 = 30 |
+| ++ | Increment | Increase variable by 1, so let x=20; x++; x=21 |
+| - | Subtraction | Subtract the variable's numbers, 15-5=10 |
+| -- | Decrement | Decrease variable's number by 1, so let x=20; x--; x=19 |
+| * | Multiplication | Multiplies one number ny another, 5 * 10 = 50 |
+| / | Division | Divides one number by another 100/10 = 10 |
+| % | Modulus | Returns remainder, 100 % 8 = 4 |
+
+#### Comparison Operators
+| Operator | Use Case & Example |
+| --- | ---|
+| == | Equal to, 100 == 100 |
+| === | Equal to & identical, 500 === 500 (looking for identical types) | 
+| != | Not equal to, 100!=50 |
+| !== | Not identical, 35!==75 |
+| < | Less than, 5 < 85 |
+| <= | Less than or equal to, 60 <= 90 |
+| > | Greater than 30 > 5 |
+| >= | Greater than or equal, 1,000>= | 
+
+####
+| Data Types | Example |
+| --- | --- |
+| String | 'Morpheus' |
+| Arrays | [1,2,3] |
+| Objects | {Name:'John', Occupation:'Master Hacker'} |
+| Booleans | True or false |
+| Numbers | 455 |
+| Floating-point numbers | 10.5 |
