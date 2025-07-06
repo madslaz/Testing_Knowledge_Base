@@ -12,3 +12,4 @@
    * It's going to respond to traffic! Share folder is one example, requests fly across network if LLMNR is enabled. Best time to run it is morning and after lunch. 
 2.  An event occurs...such as attempting to navigate to a non-existent network share
 
+
