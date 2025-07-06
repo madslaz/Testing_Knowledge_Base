@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/98a3bd50-d7dd-46f6-8e76-ee10fe49959e)## Initial AD Attack Vectors
+## Initial AD Attack Vectors
 * Usually we place ourselves within the internal network leveraging a remote device (such as a laptop or a Raspberry Pi) with a VPN connection that phones home. We share the tunnel to run these attacks remotely while also being internal to client network.
 
 ### LLMNR Poisoning (Link Local Multicast Name Resolution)
